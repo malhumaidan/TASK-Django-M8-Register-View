@@ -46,4 +46,5 @@ urlpatterns = [
 
     path("register/", RegistrationCreateView.as_view(), name="register"),
     path("login/", LoginView.as_view(), name="login"),
+    path("createbooking/<int:flight_id>/", views.CreateBooking.as_view(), name="create-book"),
 ]
